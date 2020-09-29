@@ -1,2 +1,2 @@
-# ikea.github.io
+# ikea
 jslesson
