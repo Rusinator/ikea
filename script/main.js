@@ -7,20 +7,21 @@ const subCatalog = document.querySelector('.subcatalog');
 const subCatalogHeader = document.querySelector('.subcatalog-header');
 const btnReturn = document.querySelector('.btn-return');
 
-const overlay = document.createElement('div');
+const overlay = document.createElement('div'); // создаем элемент div
 
-overlay.classList.add('overlay');
-document.body.insertAdjacentElement(`beforeend`, overlay);
+overlay.classList.add('overlay'); // добавляем ему класс overlay
+document.body.insertAdjacentElement(`beforeend`, overlay); // впихиваем его перед концом тега body
 
-const openMenu = () => {
-    catalog.classList.add('open');
-    overlay.classList.add('active');
+const openMenu = () => {  // стрелочная функция
+    catalog.classList.add('open');  // добавляет класс обьекту при событии 'click'
+    overlay.classList.add('active'); // добавляет класс обьекту при событии 'click'
 };
 const closeMenu = () => {
-    catalog.classList.remove('open');
-    overlay.classList.remove('active');
+    catalog.classList.remove('open'); // убирает класс у обьекта при событии 'click'
+    overlay.classList.remove('active');  // убирает класс у обьекта при событии 'click'
     closeSubMenu();
 };
+
 
 const openSubMenu = (event) => {
     event.preventDefault();
