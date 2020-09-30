@@ -18,7 +18,7 @@ const openMenu = () => {  // стрелочная функция
 };
 const closeMenu = () => {
     catalog.classList.remove('open'); // убирает класс у обьекта при событии 'click'
-    overlay.classList.remove('active');  // убирает класс у обьекта при событии 'click'
+    overlay.classList.remove('active');  
     closeSubMenu();
 };
 
